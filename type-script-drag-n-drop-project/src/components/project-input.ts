@@ -1,9 +1,14 @@
-/// <reference path="base-component.ts" />
-/// <reference path="../state/project-state.ts" />
-/// <reference path="../util/validation.ts" />
-/// <reference path="../decorators/autobind.ts" />
+// <reference path="base-component.ts" />
+// <reference path="../state/project-state.ts" />
+// <reference path="../util/validation.ts" />
+// <reference path="../decorators/autobind.ts" />
 
-namespace App {
+import { autobind } from "../decorators/autobind";
+import { projectState } from "../state/project-state";
+import { Validatable, validate } from "../util/validation";
+import { Component } from "./base-component";
+
+// namespace App {
     // PROJECT INPUT CLASS
     export class ProjectInput extends Component<HTMLDivElement, HTMLFormElement> {
         // BEFORE WE HAD DUPLICATE KEY VALUES IN MULTIPLE CLASSES SO THIS WILL BE DELETED AND ALL PUT IN ONE "COMPONENTS" CLASS FOR REUSABLITY
@@ -101,4 +106,4 @@ namespace App {
             }
         };
     }
-}
+// }
