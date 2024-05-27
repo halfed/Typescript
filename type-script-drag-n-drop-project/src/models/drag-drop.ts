@@ -1,5 +1,5 @@
 // DRAG AND DROP INTERFACES
-namespace App {
+// namespace App {
     export interface Draggable {
         dragStartHandler(event: DragEvent): void;
         dragEndHandler(eventf: DragEvent): void;
@@ -10,4 +10,4 @@ namespace App {
         dropHandler(event: DragEvent): void;
         dragLeaveHandler(event: DragEvent): void;
     }
-}
+// }

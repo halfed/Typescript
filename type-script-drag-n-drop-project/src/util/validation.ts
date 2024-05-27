@@ -1,5 +1,5 @@
 // Validation
-namespace App {
+// namespace App {
     export interface Validatable {
         value: string | number;
         required?: Boolean;
@@ -35,4 +35,4 @@ namespace App {
         }
         return isValid;
     }
-}
+// }

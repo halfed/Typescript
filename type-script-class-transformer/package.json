@@ -5,9 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server",
-    "run": "webpack-dev-server",
-    "build": "webpack"
+    "start": "webpack-dev-server"
   },
   "keywords": [
     "typescript",
@@ -16,15 +14,17 @@
   "author": "Ed Wince",
   "license": "ISC",
   "devDependencies": {
-    "@types/lodash": "^4.17.4",
-    "lite-server": "^2.5.4",
+    "@types/lodash": "^4.14.146"
+  },
+  "dependencies": {
+    "class-transformer": "^0.2.3",
+    "class-validator": "^0.14.1",
+    "lodash": "^4.17.15",
+    "reflect-metadata": "^0.1.13",
     "ts-loader": "^9.4.2",
     "typescript": "^4.9.5",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
-  },
-  "dependencies": {
-    "lodash": "^4.17.21"
   }
 }
