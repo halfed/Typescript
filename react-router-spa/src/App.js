@@ -8,6 +8,7 @@ import {
 import RootLayout from './pages/Root';
 import HomePage from './pages/Home';
 import ProductsPage from './pages/Products';
+import ProductDetailPage from './pages/ProductDetail';
 import ErrorPage from './pages/Error';
 
 // TWO WAYS TO DEFINE ROUTES, THE ONE I'LL GO WITH IS THE OBJECT BASED APPROACH
@@ -24,9 +25,11 @@ const router = createBrowserRouter([
      path: '/',
 		 element: <RootLayout />,
 		 errorElement: <ErrorPage />,
-		 children: [
-		 	{ path: '/', element: <HomePage /> },
-    	{ path: '/products', element: <ProductsPage /> }
+        children: [
+         //index: true is default index route vs path: ''
+		 	{ index: true, element: <HomePage /> },
+            { path: '/products', element: <ProductsPage /> },
+            { path: '/products/:productId', element:<ProductDetailPage/> }
 		 ] 
     },
 ])
